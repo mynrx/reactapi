@@ -8,20 +8,24 @@ class AppComponentStyle extends Component {
       items: [],
       isLoading: true,
     };
+
+    this.FetchData = function (url, options) {
+      fetch(url)
+        .then((res) => res.json())
+        .then((json) => {
+          const timer = setTimeout(() => {
+            this.setState({
+              isLoading: false,
+              items: json,
+            });
+            clearTimeout(timer);
+          }, 3000);
+        });
+    };
   }
 
   componentDidMount() {
-    fetch("https://jsonplaceholder.typicode.com/users")
-      .then((res) => res.json())
-      .then((json) => {
-        const timer = setTimeout(() => {
-          this.setState({
-            isLoading: false,
-            items: json,
-          });
-          clearTimeout(timer);
-        }, 3000);
-      });
+    this.FetchData("https://jsonplaceholder.typicode.com/users", {});
   }
 
   render() {

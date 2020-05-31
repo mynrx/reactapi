@@ -25,7 +25,7 @@ const FetchData = (url, options) => {
   return { data, isLoading, error };
 };
 
-function App() {
+function AppHooksStyle() {
   const resp = FetchData("https://jsonplaceholder.typicode.com/users", {});
   if (resp.isLoading || !resp.data) {
     return <div>Hooks style --> Loading...</div>;
@@ -47,4 +47,4 @@ function App() {
   }
 }
 
-export default App;
+export default AppHooksStyle;

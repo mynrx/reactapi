@@ -2,15 +2,15 @@ import "./index.css";
 
 import * as serviceWorker from "./serviceWorker";
 
-import App from "./App";
 import AppComponentStyle from "./AppComponentStyle";
+import AppHooksStyle from "./AppHooksStyle";
 import React from "react";
 import ReactDOM from "react-dom";
 
 ReactDOM.render(
   <React.StrictMode>
     <br />
-    <App />
+    <AppHooksStyle />
     <br />
     <br />
     <br />
