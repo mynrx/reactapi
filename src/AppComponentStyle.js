@@ -34,8 +34,8 @@ class AppComponentStyle extends Component {
       return <div>Component style --> Loading...</div>;
     } else {
       return (
-        <div className="AppComponentStyle">
-          <div>Done!</div>;
+        <div className="App">
+          <div>Done!</div>
           <ul>
             {items.map((item) => (
               <li key={item.id}>

@@ -32,7 +32,7 @@ function AppHooksStyle() {
   } else {
     return (
       <div className="App">
-        <div>Done!</div>;
+        <div>Done!</div>
         <ul>
           {resp.data.map((item) => (
             <li key={item.id}>
