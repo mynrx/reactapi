@@ -6,11 +6,15 @@ import * as serviceWorker from "./serviceWorker";
 import AppComponentStyle from "./AppComponentStyle";
 import AppHooksStyle from "./AppHooksStyle";
 import AppPostComponent from "./AppPostComponent";
+import AppPostHooks from "./AppPostHooks";
 import React from "react";
 import ReactDOM from "react-dom";
 
 ReactDOM.render(
   <React.StrictMode>
+    <br />
+    <br />
+    <AppPostHooks />
     <br />
     <br />
     <AppPostComponent />

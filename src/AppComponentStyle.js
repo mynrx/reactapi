@@ -31,7 +31,7 @@ class AppComponentStyle extends Component {
   render() {
     var { isLoading, items } = this.state;
     if (isLoading) {
-      return <div>Component style --> Loading...</div>;
+      return <div>Component style -- Loading...</div>;
     } else {
       return (
         <div className="App">
@@ -40,7 +40,7 @@ class AppComponentStyle extends Component {
             {items.map((item) => (
               <li key={item.id}>
                 {item.name}
-                <span>--></span>
+                <span>--</span>
                 {item.email}
               </li>
             ))}

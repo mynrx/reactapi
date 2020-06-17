@@ -8,7 +8,7 @@ class AppPostComponent extends Component {
       isLoading: true,
     };
 
-    this.fetchOptions = {
+    this.requestOptions = {
       method: "post",
       mode: "cors",
       headers: {
@@ -44,12 +44,12 @@ class AppPostComponent extends Component {
           className="App-Button"
           onClick={() =>
             this.PostData(
-              "https://en0bfrs3qwlywf.x.pipedream.net/sample/post/request/",
-              this.fetchOptions
+              "https://enl23apee10w.x.pipedream.net/sample/post/request/",
+              this.requestOptions
             )
           }
         >
-          Post data...
+          Post data using component...
         </button>
       </div>
     );
